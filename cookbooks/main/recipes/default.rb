@@ -4,8 +4,11 @@
 #  }
 #end
 
+# custom recipe to log to the dashboard
+include_recipe "dashlogtest"
+
 # custom recipe to turn on binary log purging
-include_recipe "mysql_logpurge"
+# include_recipe "mysql_logpurge"
 
 # uncomment to deny access to /log, /config, and .git directories as well as any .yml files
 # include_recipe "deny-directories"
